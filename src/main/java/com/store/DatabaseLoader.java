@@ -38,7 +38,7 @@ public class DatabaseLoader implements CommandLineRunner{
 	@Override
 	public void run(String...strings) throws Exception {
 		
-		/**
+		
 		
 		Category food = new Category("Food & Drinks");
 		categoryRepository.save(food);
@@ -86,7 +86,7 @@ public class DatabaseLoader implements CommandLineRunner{
 		
 		Set<Product> cleanProducts = new HashSet<>();
 		cleanProducts.add(new Product("Laundry Soap"));
-		cleanProducts.add(new Product("Kitchen Soap"));
+		cleanProducts.add(new Product("Dishwashing Soap"));
 		cleanProducts.add(new Product("Cleaning Materials"));
 		cleanProducts.add(new Product("Fabric Conditioner"));
 		cleanProducts.add(new Product("Others"));
@@ -102,7 +102,7 @@ public class DatabaseLoader implements CommandLineRunner{
 		
 		
 
-		*/
+		
 		
 		
 	}
