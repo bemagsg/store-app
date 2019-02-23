@@ -39,7 +39,7 @@ public class DatabaseLoader implements CommandLineRunner{
 	public void run(String...strings) throws Exception {
 		
 		
-		
+		/**
 		Category food = new Category("Food & Drinks");
 		categoryRepository.save(food);
 		
@@ -98,7 +98,7 @@ public class DatabaseLoader implements CommandLineRunner{
 		}
 		cleaning.setProducts(cleanProducts);
 		
-		
+		*/
 		
 		
 
