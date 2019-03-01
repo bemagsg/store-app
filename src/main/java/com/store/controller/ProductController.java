@@ -22,7 +22,7 @@ import com.store.services.ItemServices;
 import com.store.services.ProductServices;
 
 @RestController
-@RequestMapping("/api")
+
 public class ProductController {
 	
 	@Autowired
