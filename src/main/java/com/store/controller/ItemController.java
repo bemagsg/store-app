@@ -23,7 +23,7 @@ import com.store.entity.Item;
 import com.store.services.ItemServices;
 
 @RestController
-@RequestMapping("/api/product")
+@RequestMapping("/product")
 public class ItemController {
 	
 	
