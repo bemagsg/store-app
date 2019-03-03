@@ -50,9 +50,9 @@ public class ItemController {
 	}
 	
 	@PutMapping("/item")
-	public ResponseEntity<Item> edit(@Valid @RequestBody Item item) {
+	public void edit( @RequestBody Item item) {
 		Item result = itemServices.saveItem(item);
-        return ResponseEntity.ok().body(result);
+        
 		
 	}
 	
