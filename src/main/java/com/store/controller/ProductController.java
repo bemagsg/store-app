@@ -27,7 +27,7 @@ public class ProductController {
 	
 	@Autowired
 	private ProductServices prodServices;
-	
+
 	
 	@PostMapping("/product/new")
 	public String createProduct(@RequestBody Product product) {
@@ -43,6 +43,16 @@ public class ProductController {
 	@GetMapping("/categories")
 	public List<Category> getAllCategory() {
 		return prodServices.getAllCategory();
+	}
+	
+	@DeleteMapping("/product/{id}")
+	public void delProduct(@PathVariable Long id){
+		prodServices.deleteProduct(id);	
+	}
+	
+	@DeleteMapping("/category/{id}")
+	public void delCategory(@PathVariable Long id){
+		prodServices.deleteCategory(id);	
 	}
 	
 	@GetMapping("/product/{id}")
