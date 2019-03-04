@@ -48,6 +48,18 @@ public class ProductServices {
 	
 	}
 	
+	public void deleteProduct(Long id) {
+		
+		prodRepository.deleteById(id);
+		
+	}
+	
+	public void deleteCategory(Long id) {
+		
+		catRepository.deleteById(id);
+		
+	}
+	
 	public List<Category> getAllCategory() {
 		
 		return catRepository.findAll();
