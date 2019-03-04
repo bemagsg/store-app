@@ -1,5 +1,7 @@
 package com.store.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Collection;
@@ -26,6 +28,8 @@ import com.store.services.ItemServices;
 @RequestMapping("/api/product")
 public class ItemController {
 	
+	private static final Logger logger = LoggerFactory.getLogger(ItemController.class);
+	
 	
 	@Autowired
 	private ItemServices itemServices;
@@ -51,6 +55,7 @@ public class ItemController {
 	
 	@PutMapping("/item")
 	public ResponseEntity<Item> edit(@Valid @RequestBody Item item) {
+		logger.info("Request to update item{}",item);
 		Item result = itemServices.saveItem(item);
         return ResponseEntity.ok().body(result);
 		
