@@ -48,13 +48,13 @@ public class ProductServices {
 	
 	}
 	
-	public void deleteProduct(Long id) {
+	public void deleteProduct(int id) {
 		
 		prodRepository.deleteById(id);
 		
 	}
 	
-	public void deleteCategory(Long id) {
+	public void deleteCategory(int id) {
 		
 		catRepository.deleteById(id);
 		
